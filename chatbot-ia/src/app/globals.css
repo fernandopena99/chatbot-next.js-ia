@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme variables */
+    --background: 220 14% 96.1%;
+    --foreground: 220 14% 10%;
+  }
+
+  .dark {
+    /* Dark theme variables */
+    --background: 220 14% 10%;
+    --foreground: 220 14% 96.1%;
+  }
+}
+
+body {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+}
